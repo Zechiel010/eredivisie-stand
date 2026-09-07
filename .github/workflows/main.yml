@@ -1,0 +1,42 @@
+name: Update Eredivisie stand
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-stand:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository ophalen
+        uses: actions/checkout@v4
+
+      - name: Actuele stand ophalen
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: |
+          curl -s \
+            -H "X-Auth-Token: $FOOTBALL_DATA_TOKEN" \
+            "https://api.football-data.org/v4/competitions/DED/standings" \
+            -o standings.json
+
+      - name: Controleren of gegevens zijn opgehaald
+        run: |
+          if ! grep -q '"standings"' standings.json; then
+            echo "Fout: Football-data.org heeft geen geldige stand teruggegeven."
+            cat standings.json
+            exit 1
+          fi
+
+      - name: Stand opslaan
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add standings.json
+          git diff --cached --quiet || git commit -m "Update actuele Eredivisie stand"
+          git push
