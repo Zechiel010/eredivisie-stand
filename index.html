@@ -7,6 +7,11 @@
     <title>Aangepaste Eredivisie Stand</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: #f2f2f2;
@@ -15,40 +20,79 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 3px 20px rgba(0,0,0,0.10);
         }
 
         h1 {
             text-align: center;
             color: #111;
+            margin-top: 5px;
+            margin-bottom: 10px;
         }
 
         .uitleg {
             text-align: center;
             color: #666;
             margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .update {
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .status-bol {
+            width: 8px;
+            height: 8px;
+            background: #20a044;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 650px;
         }
 
         th {
             background: #111;
             color: white;
-            padding: 12px 8px;
+            padding: 13px 8px;
+            font-size: 14px;
         }
 
         td {
-            padding: 12px 8px;
-            border-bottom: 1px solid #ddd;
+            padding: 13px 8px;
+            border-bottom: 1px solid #e1e1e1;
             text-align: center;
+        }
+
+        tbody tr {
+            transition: background 0.15s ease;
+        }
+
+        tbody tr:hover {
+            background: #fafafa;
         }
 
         td:nth-child(2) {
@@ -63,19 +107,47 @@
         }
 
         .club img {
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
             object-fit: contain;
+        }
+
+        .club-naam {
+            font-weight: bold;
         }
 
         .punten {
             font-weight: bold;
             font-size: 18px;
+            white-space: nowrap;
         }
 
         .correctie {
             color: #008000;
             font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Clubkleuren */
+
+        .az {
+            border-left: 5px solid #e30613;
+        }
+
+        .twente {
+            border-left: 5px solid #e30613;
+        }
+
+        .feyenoord {
+            border-left: 5px solid #111111;
+        }
+
+        .psv {
+            border-left: 5px solid #e30613;
+        }
+
+        .ajax {
+            border-left: 5px solid #d2122e;
         }
 
         .footer {
@@ -87,40 +159,90 @@
 
         .laden {
             text-align: center;
-            padding: 30px;
+            padding: 35px;
             color: #666;
         }
 
         .fout {
             text-align: center;
-            padding: 30px;
+            padding: 35px;
             color: #cc0000;
         }
 
-        @media (max-width: 600px) {
+        /* Mobiele versie */
+
+        @media (max-width: 700px) {
+
             body {
-                padding: 10px;
+                padding: 8px;
             }
 
             .container {
-                padding: 12px;
+                padding: 18px 10px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .uitleg {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            .update {
+                font-size: 12px;
             }
 
             th,
             td {
-                padding: 9px 4px;
-                font-size: 14px;
+                padding: 10px 5px;
+                font-size: 13px;
             }
 
             .club img {
-                width: 22px;
-                height: 22px;
+                width: 27px;
+                height: 27px;
+            }
+
+            .club {
+                gap: 7px;
             }
 
             .punten {
                 font-size: 16px;
             }
+
+            .correctie {
+                display: block;
+                font-size: 12px;
+                margin-top: 2px;
+            }
         }
+
+        @media (max-width: 450px) {
+
+            h1 {
+                font-size: 23px;
+            }
+
+            .container {
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+
+            th,
+            td {
+                padding: 9px 4px;
+            }
+
+            .club img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
     </style>
 </head>
 
@@ -134,205 +256,423 @@
         De actuele Eredivisie-stand met onze eigen puntentelling.
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Club</th>
-                <th>G</th>
-                <th>W</th>
-                <th>G</th>
-                <th>V</th>
-                <th>DV</th>
-                <th>DT</th>
-                <th>Punten</th>
-            </tr>
-        </thead>
+    <div class="update">
+        <span class="status">
+            <span class="status-bol"></span>
+            <span id="laatstBijgewerkt">
+                Stand wordt geladen...
+            </span>
+        </span>
+    </div>
 
-        <tbody id="stand">
-            <tr>
-                <td colspan="9" class="laden">
-                    Actuele stand wordt geladen...
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Club</th>
+                    <th>G</th>
+                    <th>W</th>
+                    <th>G</th>
+                    <th>V</th>
+                    <th>DV</th>
+                    <th>DT</th>
+                    <th>Punten</th>
+                </tr>
+            </thead>
+
+            <tbody id="stand">
+
+                <tr>
+                    <td colspan="9" class="laden">
+                        Actuele stand wordt geladen...
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
 
     <div class="footer">
-        Actuele gegevens van football-data.org · Automatisch bijgewerkt
+        Actuele gegevens van football-data.org
     </div>
 
 </div>
 
+
 <script>
 
-    // De vijf clubs die op onze website moeten staan
+    /*
+     * Onze eigen puntentelling
+     */
+
     const clubs = {
+
         "PSV": {
             naam: "PSV",
-            bonus: 0
+            bonus: 0,
+            klasse: "psv"
         },
 
         "Ajax": {
             naam: "Ajax",
-            bonus: 3
+            bonus: 3,
+            klasse: "ajax"
         },
 
         "Feyenoord": {
             naam: "Feyenoord",
-            bonus: 3
+            bonus: 3,
+            klasse: "feyenoord"
         },
 
         "AZ": {
             naam: "AZ",
-            bonus: 10
+            bonus: 10,
+            klasse: "az"
         },
 
         "FC Twente": {
             naam: "FC Twente",
-            bonus: 12
+            bonus: 12,
+            klasse: "twente"
         }
+
     };
 
+
+    /*
+     * De actuele stand ophalen
+     */
 
     async function laadStand() {
 
         try {
 
-            // We halen standings.json uit dezelfde GitHub Pages-map
-            // De timestamp voorkomt dat een oude versie uit de cache wordt gebruikt
             const response = await fetch(
                 "standings.json?" + new Date().getTime()
             );
 
             if (!response.ok) {
-                throw new Error("standings.json kon niet worden geladen.");
+                throw new Error(
+                    "standings.json kon niet worden geladen."
+                );
             }
 
             const data = await response.json();
 
 
-            // De TOTAL-stand pakken
+            /*
+             * Tijdstip van de laatste API-update
+             */
+
+            if (data.updatedAt) {
+
+                const datum = new Date(data.updatedAt);
+
+                const datumTekst = datum.toLocaleString(
+                    "nl-NL",
+                    {
+                        day: "2-digit",
+                        month: "2-digit",
+                        year: "numeric",
+                        hour: "2-digit",
+                        minute: "2-digit"
+                    }
+                );
+
+                document.getElementById(
+                    "laatstBijgewerkt"
+                ).textContent =
+                    "Laatst bijgewerkt: " + datumTekst;
+
+            }
+
+
+            /*
+             * De totale Eredivisie-stand pakken
+             */
+
             const totalStand = data.standings.find(
                 standing => standing.type === "TOTAL"
             );
 
+
             if (!totalStand) {
-                throw new Error("Geen totale stand gevonden.");
+                throw new Error(
+                    "Geen totale stand gevonden."
+                );
             }
 
 
-            // Alleen onze vijf clubs selecteren
-            const geselecteerdeClubs = totalStand.table
+            /*
+             * Alleen onze vijf clubs selecteren
+             */
+
+            const geselecteerdeClubs =
+                totalStand.table
+
                 .filter(team => {
 
                     const naam = team.team.name;
 
                     return Object.keys(clubs).some(
-                        clubNaam => naam.includes(clubNaam)
+                        clubNaam =>
+                            naam.includes(clubNaam)
                     );
+
                 })
+
                 .map(team => {
 
                     const naam = team.team.name;
 
-                    const clubNaam = Object.keys(clubs).find(
-                        club => naam.includes(club)
-                    );
+                    const clubNaam =
+                        Object.keys(clubs).find(
+                            club =>
+                                naam.includes(club)
+                        );
 
-                    const bonus = clubs[clubNaam].bonus;
+
+                    const bonus =
+                        clubs[clubNaam].bonus;
+
 
                     return {
-                        naam: clubs[clubNaam].naam,
-                        logo: team.team.crest,
-                        gespeeld: team.playedGames,
-                        gewonnen: team.won,
-                        gelijk: team.draw,
-                        verloren: team.lost,
-                        voor: team.goalsFor,
-                        tegen: team.goalsAgainst,
-                        verschil: team.goalsFor - team.goalsAgainst,
-                        originelePunten: team.points,
-                        bonus: bonus,
-                        punten: team.points + bonus
+
+                        naam:
+                            clubs[clubNaam].naam,
+
+                        klasse:
+                            clubs[clubNaam].klasse,
+
+                        logo:
+                            team.team.crest,
+
+                        gespeeld:
+                            team.playedGames,
+
+                        gewonnen:
+                            team.won,
+
+                        gelijk:
+                            team.draw,
+
+                        verloren:
+                            team.lost,
+
+                        voor:
+                            team.goalsFor,
+
+                        tegen:
+                            team.goalsAgainst,
+
+                        verschil:
+                            team.goalsFor -
+                            team.goalsAgainst,
+
+                        originelePunten:
+                            team.points,
+
+                        bonus:
+                            bonus,
+
+                        punten:
+                            team.points + bonus
+
                     };
+
                 });
 
 
-            // Sorteer op aangepaste punten
-            // Bij gelijke punten gebruiken we doelsaldo en daarna goals voor
-            geselecteerdeClubs.sort((a, b) => {
+            /*
+             * Sorteren op onze aangepaste punten
+             */
 
-                if (b.punten !== a.punten) {
-                    return b.punten - a.punten;
+            geselecteerdeClubs.sort(
+                (a, b) => {
+
+                    if (
+                        b.punten !== a.punten
+                    ) {
+                        return (
+                            b.punten -
+                            a.punten
+                        );
+                    }
+
+                    if (
+                        b.verschil !==
+                        a.verschil
+                    ) {
+                        return (
+                            b.verschil -
+                            a.verschil
+                        );
+                    }
+
+                    return (
+                        b.voor -
+                        a.voor
+                    );
+
                 }
-
-                if (b.verschil !== a.verschil) {
-                    return b.verschil - a.verschil;
-                }
-
-                return b.voor - a.voor;
-            });
+            );
 
 
-            // Tabel leegmaken
-            const tabel = document.getElementById("stand");
+            /*
+             * Tabel leegmaken
+             */
+
+            const tabel =
+                document.getElementById(
+                    "stand"
+                );
+
             tabel.innerHTML = "";
 
 
-            // Iedere club in de tabel zetten
-            geselecteerdeClubs.forEach((club, index) => {
+            /*
+             * Clubs in de tabel plaatsen
+             */
 
-                const rij = document.createElement("tr");
+            geselecteerdeClubs.forEach(
+                (club, index) => {
 
-                rij.innerHTML = `
-                    <td>${index + 1}</td>
+                    const rij =
+                        document.createElement(
+                            "tr"
+                        );
 
-                    <td>
-                        <div class="club">
-                            <img src="${club.logo}" alt="${club.naam}">
-                            <span>${club.naam}</span>
-                        </div>
-                    </td>
-
-                    <td>${club.gespeeld}</td>
-                    <td>${club.gewonnen}</td>
-                    <td>${club.gelijk}</td>
-                    <td>${club.verloren}</td>
-                    <td>${club.voor}</td>
-                    <td>${club.tegen}</td>
-
-                    <td class="punten">
-                        ${club.punten}
-                        ${
-                            club.bonus > 0
-                            ? `<span class="correctie"> (+${club.bonus})</span>`
-                            : ""
-                        }
-                    </td>
-                `;
-
-                tabel.appendChild(rij);
-            });
+                    rij.className =
+                        club.klasse;
 
 
-        } catch (error) {
+                    rij.innerHTML = `
+
+                        <td>
+                            ${index + 1}
+                        </td>
+
+                        <td>
+
+                            <div class="club">
+
+                                <img
+                                    src="${club.logo}"
+                                    alt="${club.naam}"
+                                >
+
+                                <span class="club-naam">
+                                    ${club.naam}
+                                </span>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            ${club.gespeeld}
+                        </td>
+
+                        <td>
+                            ${club.gewonnen}
+                        </td>
+
+                        <td>
+                            ${club.gelijk}
+                        </td>
+
+                        <td>
+                            ${club.verloren}
+                        </td>
+
+                        <td>
+                            ${club.voor}
+                        </td>
+
+                        <td>
+                            ${club.tegen}
+                        </td>
+
+                        <td class="punten">
+
+                            ${club.punten}
+
+                            ${
+                                club.bonus > 0
+                                ? `
+                                    <span class="correctie">
+                                        (+${club.bonus})
+                                    </span>
+                                  `
+                                : ""
+                            }
+
+                        </td>
+
+                    `;
+
+                    tabel.appendChild(rij);
+
+                }
+            );
+
+
+        }
+
+        catch (error) {
 
             console.error(error);
 
-            document.getElementById("stand").innerHTML = `
+            document.getElementById(
+                "stand"
+            ).innerHTML = `
+
                 <tr>
-                    <td colspan="9" class="fout">
-                        Er ging iets mis bij het ophalen van de actuele stand.
+
+                    <td
+                        colspan="9"
+                        class="fout"
+                    >
+
+                        Er ging iets mis
+                        bij het ophalen
+                        van de actuele stand.
+
                     </td>
+
                 </tr>
+
             `;
+
         }
+
     }
 
 
-    // Stand laden zodra de website geopend wordt
+    /*
+     * Eerste keer laden
+     */
+
     laadStand();
+
+
+    /*
+     * Iedere 5 minuten opnieuw controleren
+     *
+     * De GitHub Action werkt iedere 15 minuten
+     * de gegevens daadwerkelijk bij.
+     */
+
+    setInterval(
+        laadStand,
+        5 * 60 * 1000
+    );
 
 </script>
 
