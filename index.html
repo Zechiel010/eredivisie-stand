@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aangepaste Eredivisie Stand</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #111;
+        }
+
+        .uitleg {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #111;
+            color: white;
+            padding: 12px 8px;
+        }
+
+        td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        td:nth-child(2) {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .club {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .punten {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .correctie {
+            color: #008000;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏆 Aangepaste Eredivisie Stand</h1>
+
+    <div class="uitleg">
+        De punten zijn aangepast volgens onze eigen puntentelling.
+    </div>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Club</th>
+                <th>G</th>
+                <th>W</th>
+                <th>G</th>
+                <th>V</th>
+                <th>DV</th>
+                <th>DT</th>
+                <th>Punten</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="club">🔴 AZ</div>
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="punten">12</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>
+                    <div class="club">🔴 FC Twente</div>
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="punten">13</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>
+                    <div class="club">🔴 Ajax</div>
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="punten">3</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>
+                    <div class="club">🔴 Feyenoord</div>
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="punten">3</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>
+                    <div class="club">🔴 PSV</div>
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="punten">0</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="footer">
+        Dit is een testversie. De actuele Eredivisie-gegevens worden later automatisch opgehaald.
+    </div>
+
+</div>
+
+</body>
+</html>
