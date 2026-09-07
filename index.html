@@ -171,56 +171,118 @@
 
         /* Mobiele versie */
 
-        @media (max-width: 700px) {
+@media (max-width: 700px) {
 
-            body {
-                padding: 8px;
-            }
+    body {
+        padding: 5px;
+    }
 
-            .container {
-                padding: 18px 10px;
-                border-radius: 12px;
-            }
+    .container {
+        padding: 15px 5px;
+        border-radius: 10px;
+        width: 100%;
+    }
 
-            h1 {
-                font-size: 27px;
-            }
+    h1 {
+        font-size: 23px;
+        margin-bottom: 8px;
+    }
 
-            .uitleg {
-                font-size: 14px;
-                line-height: 1.4;
-            }
+    .uitleg {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
 
-            .update {
-                font-size: 12px;
-            }
+    .update {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
 
-            th,
-            td {
-                padding: 10px 5px;
-                font-size: 13px;
-            }
+    .table-wrapper {
+        overflow-x: hidden;
+    }
 
-            .club img {
-                width: 27px;
-                height: 27px;
-            }
+    table {
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+    }
 
-            .club {
-                gap: 7px;
-            }
+    th {
+        padding: 8px 2px;
+        font-size: 10px;
+    }
 
-            .punten {
-                font-size: 16px;
-            }
+    td {
+        padding: 8px 2px;
+        font-size: 11px;
+    }
 
-            .correctie {
-                display: block;
-                font-size: 12px;
-                margin-top: 2px;
-            }
-        }
+    /* Kolombreedtes */
 
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 6%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 28%;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6) {
+        width: 8%;
+    }
+
+    th:nth-child(7),
+    td:nth-child(7),
+    th:nth-child(8),
+    td:nth-child(8) {
+        width: 9%;
+    }
+
+    th:nth-child(9),
+    td:nth-child(9) {
+        width: 16%;
+    }
+
+    .club {
+        gap: 3px;
+    }
+
+    .club img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .club-naam {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .punten {
+        font-size: 14px;
+    }
+
+    .correctie {
+        display: block;
+        font-size: 9px;
+        line-height: 1;
+        margin-top: 2px;
+    }
+
+    .footer {
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
         @media (max-width: 450px) {
 
             h1 {
