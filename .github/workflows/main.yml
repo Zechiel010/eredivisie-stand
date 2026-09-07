@@ -3,7 +3,7 @@ name: Update Eredivisie stand
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -25,7 +25,7 @@ jobs:
             "https://api.football-data.org/v4/competitions/DED/standings" \
             -o standings.json
 
-      - name: Controleren of gegevens zijn opgehaald
+      - name: Gegevens controleren
         run: |
           if ! grep -q '"standings"' standings.json; then
             echo "Fout: Football-data.org heeft geen geldige stand teruggegeven."
@@ -33,10 +33,20 @@ jobs:
             exit 1
           fi
 
+      - name: Tijdstip toevoegen
+        run: |
+          jq --arg tijd "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
+            '. + {updatedAt: $tijd}' standings.json > standings.tmp
+          mv standings.tmp standings.json
+
       - name: Stand opslaan
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add standings.json
-          git diff --cached --quiet || git commit -m "Update actuele Eredivisie stand"
+
+          git diff --cached --quiet || \
+            git commit -m "Update actuele Eredivisie stand"
+
           git push
