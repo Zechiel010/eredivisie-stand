@@ -62,6 +62,12 @@
             gap: 10px;
         }
 
+        .club img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+
         .punten {
             font-weight: bold;
             font-size: 18px;
@@ -78,6 +84,43 @@
             color: #888;
             font-size: 13px;
         }
+
+        .laden {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+        }
+
+        .fout {
+            text-align: center;
+            padding: 30px;
+            color: #cc0000;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 12px;
+            }
+
+            th,
+            td {
+                padding: 9px 4px;
+                font-size: 14px;
+            }
+
+            .club img {
+                width: 22px;
+                height: 22px;
+            }
+
+            .punten {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -88,11 +131,10 @@
     <h1>🏆 Aangepaste Eredivisie Stand</h1>
 
     <div class="uitleg">
-        De punten zijn aangepast volgens onze eigen puntentelling.
+        De actuele Eredivisie-stand met onze eigen puntentelling.
     </div>
 
     <table>
-
         <thead>
             <tr>
                 <th>#</th>
@@ -107,87 +149,192 @@
             </tr>
         </thead>
 
-        <tbody>
-
+        <tbody id="stand">
             <tr>
-                <td>1</td>
-                <td>
-                    <div class="club">🔴 AZ</div>
+                <td colspan="9" class="laden">
+                    Actuele stand wordt geladen...
                 </td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td class="punten">10</td>
             </tr>
-
-            <tr>
-                <td>2</td>
-                <td>
-                    <div class="club">🔴 FC Twente</div>
-                </td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td class="punten">12</td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td>
-                    <div class="club">🔴 Ajax</div>
-                </td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td class="punten">3</td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td>
-                    <div class="club">🔴 Feyenoord</div>
-                </td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td class="punten">3</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>
-                    <div class="club">🔴 PSV</div>
-                </td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td class="punten">0</td>
-            </tr>
-
         </tbody>
-
     </table>
 
     <div class="footer">
-        Dit is een testversie. De actuele Eredivisie-gegevens worden later automatisch opgehaald.
+        Actuele gegevens van football-data.org · Automatisch bijgewerkt
     </div>
 
 </div>
+
+<script>
+
+    // De vijf clubs die op onze website moeten staan
+    const clubs = {
+        "PSV": {
+            naam: "PSV",
+            bonus: 0
+        },
+
+        "Ajax": {
+            naam: "Ajax",
+            bonus: 3
+        },
+
+        "Feyenoord": {
+            naam: "Feyenoord",
+            bonus: 3
+        },
+
+        "AZ": {
+            naam: "AZ",
+            bonus: 10
+        },
+
+        "FC Twente": {
+            naam: "FC Twente",
+            bonus: 12
+        }
+    };
+
+
+    async function laadStand() {
+
+        try {
+
+            // We halen standings.json uit dezelfde GitHub Pages-map
+            // De timestamp voorkomt dat een oude versie uit de cache wordt gebruikt
+            const response = await fetch(
+                "standings.json?" + new Date().getTime()
+            );
+
+            if (!response.ok) {
+                throw new Error("standings.json kon niet worden geladen.");
+            }
+
+            const data = await response.json();
+
+
+            // De TOTAL-stand pakken
+            const totalStand = data.standings.find(
+                standing => standing.type === "TOTAL"
+            );
+
+            if (!totalStand) {
+                throw new Error("Geen totale stand gevonden.");
+            }
+
+
+            // Alleen onze vijf clubs selecteren
+            const geselecteerdeClubs = totalStand.table
+                .filter(team => {
+
+                    const naam = team.team.name;
+
+                    return Object.keys(clubs).some(
+                        clubNaam => naam.includes(clubNaam)
+                    );
+                })
+                .map(team => {
+
+                    const naam = team.team.name;
+
+                    const clubNaam = Object.keys(clubs).find(
+                        club => naam.includes(club)
+                    );
+
+                    const bonus = clubs[clubNaam].bonus;
+
+                    return {
+                        naam: clubs[clubNaam].naam,
+                        logo: team.team.crest,
+                        gespeeld: team.playedGames,
+                        gewonnen: team.won,
+                        gelijk: team.draw,
+                        verloren: team.lost,
+                        voor: team.goalsFor,
+                        tegen: team.goalsAgainst,
+                        verschil: team.goalsFor - team.goalsAgainst,
+                        originelePunten: team.points,
+                        bonus: bonus,
+                        punten: team.points + bonus
+                    };
+                });
+
+
+            // Sorteer op aangepaste punten
+            // Bij gelijke punten gebruiken we doelsaldo en daarna goals voor
+            geselecteerdeClubs.sort((a, b) => {
+
+                if (b.punten !== a.punten) {
+                    return b.punten - a.punten;
+                }
+
+                if (b.verschil !== a.verschil) {
+                    return b.verschil - a.verschil;
+                }
+
+                return b.voor - a.voor;
+            });
+
+
+            // Tabel leegmaken
+            const tabel = document.getElementById("stand");
+            tabel.innerHTML = "";
+
+
+            // Iedere club in de tabel zetten
+            geselecteerdeClubs.forEach((club, index) => {
+
+                const rij = document.createElement("tr");
+
+                rij.innerHTML = `
+                    <td>${index + 1}</td>
+
+                    <td>
+                        <div class="club">
+                            <img src="${club.logo}" alt="${club.naam}">
+                            <span>${club.naam}</span>
+                        </div>
+                    </td>
+
+                    <td>${club.gespeeld}</td>
+                    <td>${club.gewonnen}</td>
+                    <td>${club.gelijk}</td>
+                    <td>${club.verloren}</td>
+                    <td>${club.voor}</td>
+                    <td>${club.tegen}</td>
+
+                    <td class="punten">
+                        ${club.punten}
+                        ${
+                            club.bonus > 0
+                            ? `<span class="correctie"> (+${club.bonus})</span>`
+                            : ""
+                        }
+                    </td>
+                `;
+
+                tabel.appendChild(rij);
+            });
+
+
+        } catch (error) {
+
+            console.error(error);
+
+            document.getElementById("stand").innerHTML = `
+                <tr>
+                    <td colspan="9" class="fout">
+                        Er ging iets mis bij het ophalen van de actuele stand.
+                    </td>
+                </tr>
+            `;
+        }
+    }
+
+
+    // Stand laden zodra de website geopend wordt
+    laadStand();
+
+</script>
 
 </body>
 </html>
