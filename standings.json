@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 718,
+            "name": "Go Ahead Eagles",
+            "shortName": "Go Ahead",
+            "tla": "GOA",
+            "crest": "https://crests.football-data.org/718.png"
+          },
+          "playedGames": 5,
+          "form": null,
+          "won": 2,
+          "draw": 2,
+          "lost": 1,
+          "points": 8,
+          "goalsFor": 14,
+          "goalsAgainst": 12,
+          "goalDifference": 2
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 678,
             "name": "AFC Ajax",
             "shortName": "Ajax",
@@ -143,7 +162,7 @@
           "goalDifference": 4
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 666,
             "name": "FC Twente '65",
@@ -160,25 +179,6 @@
           "goalsFor": 9,
           "goalsAgainst": 5,
           "goalDifference": 4
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 718,
-            "name": "Go Ahead Eagles",
-            "shortName": "Go Ahead",
-            "tla": "GOA",
-            "crest": "https://crests.football-data.org/718.png"
-          },
-          "playedGames": 4,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 1,
-          "points": 7,
-          "goalsFor": 11,
-          "goalsAgainst": 9,
-          "goalDifference": 2
         },
         {
           "position": 9,
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 676,
+            "name": "FC Utrecht",
+            "shortName": "Utrecht",
+            "tla": "UTR",
+            "crest": "https://crests.football-data.org/676.png"
+          },
+          "playedGames": 5,
+          "form": null,
+          "won": 0,
+          "draw": 2,
+          "lost": 3,
+          "points": 2,
+          "goalsFor": 9,
+          "goalsAgainst": 18,
+          "goalDifference": -9
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 680,
             "name": "ADO Den Haag",
             "shortName": "Den Haag",
@@ -312,25 +331,6 @@
           "goalsFor": 6,
           "goalsAgainst": 14,
           "goalDifference": -8
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 676,
-            "name": "FC Utrecht",
-            "shortName": "Utrecht",
-            "tla": "UTR",
-            "crest": "https://crests.football-data.org/676.png"
-          },
-          "playedGames": 4,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 3,
-          "points": 1,
-          "goalsFor": 6,
-          "goalsAgainst": 15,
-          "goalDifference": -9
         },
         {
           "position": 17,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-08T12:04:49Z"
+  "updatedAt": "2026-09-08T12:30:02Z"
 }
