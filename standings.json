@@ -19,7 +19,7 @@
     "id": 2493,
     "startDate": "2026-08-07",
     "endDate": "2027-05-23",
-    "currentMatchday": 5,
+    "currentMatchday": 6,
     "winner": null
   },
   "standings": [
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-10T03:50:35Z"
+  "updatedAt": "2026-09-10T04:03:17Z"
 }
