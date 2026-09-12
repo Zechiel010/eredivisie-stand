@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 677,
+            "name": "FC Groningen",
+            "shortName": "Groningen",
+            "tla": "GRO",
+            "crest": "https://crests.football-data.org/677.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 2,
+          "points": 10,
+          "goalsFor": 12,
+          "goalsAgainst": 12,
+          "goalDifference": 0
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 718,
             "name": "Go Ahead Eagles",
             "shortName": "Go Ahead",
@@ -154,31 +173,12 @@
           "playedGames": 6,
           "form": null,
           "won": 2,
-          "draw": 3,
-          "lost": 1,
-          "points": 9,
-          "goalsFor": 14,
-          "goalsAgainst": 12,
-          "goalDifference": 2
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 677,
-            "name": "FC Groningen",
-            "shortName": "Groningen",
-            "tla": "GRO",
-            "crest": "https://crests.football-data.org/677.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
           "draw": 2,
           "lost": 2,
           "points": 8,
-          "goalsFor": 11,
-          "goalsAgainst": 12,
-          "goalDifference": -1
+          "goalsFor": 14,
+          "goalsAgainst": 13,
+          "goalDifference": 1
         },
         {
           "position": 9,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-12T17:20:54Z"
+  "updatedAt": "2026-09-12T17:32:40Z"
 }
