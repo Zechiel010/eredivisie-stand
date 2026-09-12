@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 678,
+            "name": "AFC Ajax",
+            "shortName": "Ajax",
+            "tla": "AJA",
+            "crest": "https://crests.football-data.org/678.png"
+          },
+          "playedGames": 5,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 1,
+          "points": 10,
+          "goalsFor": 14,
+          "goalsAgainst": 6,
+          "goalDifference": 8
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 670,
             "name": "SBV Excelsior",
             "shortName": "Excelsior",
@@ -124,25 +143,6 @@
           "goalDifference": 7
         },
         {
-          "position": 6,
-          "team": {
-            "id": 678,
-            "name": "AFC Ajax",
-            "shortName": "Ajax",
-            "tla": "AJA",
-            "crest": "https://crests.football-data.org/678.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 3,
-          "draw": 1,
-          "lost": 1,
-          "points": 10,
-          "goalsFor": 12,
-          "goalsAgainst": 6,
-          "goalDifference": 6
-        },
-        {
           "position": 7,
           "team": {
             "id": 1920,
@@ -158,8 +158,8 @@
           "lost": 2,
           "points": 10,
           "goalsFor": 12,
-          "goalsAgainst": 12,
-          "goalDifference": 0
+          "goalsAgainst": 14,
+          "goalDifference": -2
         },
         {
           "position": 8,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-12T19:46:48Z"
+  "updatedAt": "2026-09-12T20:02:57Z"
 }
