@@ -107,25 +107,6 @@
         {
           "position": 5,
           "team": {
-            "id": 1920,
-            "name": "Fortuna Sittard",
-            "shortName": "Sittard",
-            "tla": "SIT",
-            "crest": "https://crests.football-data.org/1920.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 1,
-          "points": 11,
-          "goalsFor": 11,
-          "goalsAgainst": 9,
-          "goalDifference": 2
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 670,
             "name": "SBV Excelsior",
             "shortName": "Excelsior",
@@ -143,7 +124,45 @@
           "goalDifference": 7
         },
         {
+          "position": 6,
+          "team": {
+            "id": 678,
+            "name": "AFC Ajax",
+            "shortName": "Ajax",
+            "tla": "AJA",
+            "crest": "https://crests.football-data.org/678.png"
+          },
+          "playedGames": 5,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 1,
+          "points": 10,
+          "goalsFor": 10,
+          "goalsAgainst": 5,
+          "goalDifference": 5
+        },
+        {
           "position": 7,
+          "team": {
+            "id": 1920,
+            "name": "Fortuna Sittard",
+            "shortName": "Sittard",
+            "tla": "SIT",
+            "crest": "https://crests.football-data.org/1920.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 2,
+          "points": 10,
+          "goalsFor": 11,
+          "goalsAgainst": 10,
+          "goalDifference": 1
+        },
+        {
+          "position": 8,
           "team": {
             "id": 718,
             "name": "Go Ahead Eagles",
@@ -160,25 +179,6 @@
           "goalsFor": 15,
           "goalsAgainst": 13,
           "goalDifference": 2
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 678,
-            "name": "AFC Ajax",
-            "shortName": "Ajax",
-            "tla": "AJA",
-            "crest": "https://crests.football-data.org/678.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 1,
-          "points": 8,
-          "goalsFor": 9,
-          "goalsAgainst": 5,
-          "goalDifference": 4
         },
         {
           "position": 9,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-12T18:35:30Z"
+  "updatedAt": "2026-09-12T18:47:53Z"
 }
