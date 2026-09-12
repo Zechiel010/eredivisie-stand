@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 666,
+            "name": "FC Twente '65",
+            "shortName": "Twente",
+            "tla": "TWE",
+            "crest": "https://crests.football-data.org/666.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 4,
+          "draw": 1,
+          "lost": 1,
+          "points": 13,
+          "goalsFor": 11,
+          "goalsAgainst": 5,
+          "goalDifference": 6
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 675,
             "name": "Feyenoord Rotterdam",
             "shortName": "Feyenoord",
@@ -84,25 +103,6 @@
           "goalsFor": 13,
           "goalsAgainst": 7,
           "goalDifference": 6
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 666,
-            "name": "FC Twente '65",
-            "shortName": "Twente",
-            "tla": "TWE",
-            "crest": "https://crests.football-data.org/666.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 1,
-          "points": 11,
-          "goalsFor": 10,
-          "goalsAgainst": 5,
-          "goalDifference": 5
         },
         {
           "position": 5,
@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 680,
-            "name": "ADO Den Haag",
-            "shortName": "Den Haag",
-            "tla": "ADO",
-            "crest": "https://crests.football-data.org/680.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 0,
-          "draw": 2,
-          "lost": 4,
-          "points": 2,
-          "goalsFor": 6,
-          "goalsAgainst": 14,
-          "goalDifference": -8
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 676,
             "name": "FC Utrecht",
             "shortName": "Utrecht",
@@ -333,7 +314,7 @@
           "goalDifference": -9
         },
         {
-          "position": 17,
+          "position": 16,
           "team": {
             "id": 672,
             "name": "Willem II Tilburg",
@@ -349,6 +330,25 @@
           "points": 2,
           "goalsFor": 5,
           "goalsAgainst": 14,
+          "goalDifference": -9
+        },
+        {
+          "position": 17,
+          "team": {
+            "id": 680,
+            "name": "ADO Den Haag",
+            "shortName": "Den Haag",
+            "tla": "ADO",
+            "crest": "https://crests.football-data.org/680.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 5,
+          "points": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 15,
           "goalDifference": -9
         },
         {
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-12T15:46:55Z"
+  "updatedAt": "2026-09-12T16:03:17Z"
 }
