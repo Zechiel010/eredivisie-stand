@@ -215,8 +215,8 @@
           "lost": 3,
           "points": 7,
           "goalsFor": 11,
-          "goalsAgainst": 10,
-          "goalDifference": 1
+          "goalsAgainst": 11,
+          "goalDifference": 0
         },
         {
           "position": 11,
@@ -309,9 +309,9 @@
           "draw": 1,
           "lost": 4,
           "points": 4,
-          "goalsFor": 7,
+          "goalsFor": 8,
           "goalsAgainst": 18,
-          "goalDifference": -11
+          "goalDifference": -10
         },
         {
           "position": 16,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-12T20:02:57Z"
+  "updatedAt": "2026-09-12T20:23:13Z"
 }
