@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 670,
+            "name": "SBV Excelsior",
+            "shortName": "Excelsior",
+            "tla": "EXC",
+            "crest": "https://crests.football-data.org/670.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 1,
+          "points": 11,
+          "goalsFor": 12,
+          "goalsAgainst": 5,
+          "goalDifference": 7
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 675,
             "name": "Feyenoord Rotterdam",
             "shortName": "Feyenoord",
@@ -105,7 +124,7 @@
           "goalDifference": 6
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 678,
             "name": "AFC Ajax",
@@ -122,25 +141,6 @@
           "goalsFor": 14,
           "goalsAgainst": 6,
           "goalDifference": 8
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 670,
-            "name": "SBV Excelsior",
-            "shortName": "Excelsior",
-            "tla": "EXC",
-            "crest": "https://crests.football-data.org/670.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 3,
-          "draw": 1,
-          "lost": 1,
-          "points": 10,
-          "goalsFor": 12,
-          "goalsAgainst": 5,
-          "goalDifference": 7
         },
         {
           "position": 7,
@@ -322,12 +322,12 @@
             "tla": "UTR",
             "crest": "https://crests.football-data.org/676.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "form": null,
           "won": 0,
-          "draw": 2,
+          "draw": 3,
           "lost": 3,
-          "points": 2,
+          "points": 3,
           "goalsFor": 9,
           "goalsAgainst": 18,
           "goalDifference": -9
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-13T10:06:16Z"
+  "updatedAt": "2026-09-13T10:26:15Z"
 }
