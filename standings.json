@@ -88,25 +88,6 @@
         {
           "position": 4,
           "team": {
-            "id": 670,
-            "name": "SBV Excelsior",
-            "shortName": "Excelsior",
-            "tla": "EXC",
-            "crest": "https://crests.football-data.org/670.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 1,
-          "points": 11,
-          "goalsFor": 12,
-          "goalsAgainst": 5,
-          "goalDifference": 7
-        },
-        {
-          "position": 5,
-          "team": {
             "id": 675,
             "name": "Feyenoord Rotterdam",
             "shortName": "Feyenoord",
@@ -124,7 +105,7 @@
           "goalDifference": 6
         },
         {
-          "position": 6,
+          "position": 5,
           "team": {
             "id": 678,
             "name": "AFC Ajax",
@@ -141,6 +122,25 @@
           "goalsFor": 14,
           "goalsAgainst": 6,
           "goalDifference": 8
+        },
+        {
+          "position": 6,
+          "team": {
+            "id": 670,
+            "name": "SBV Excelsior",
+            "shortName": "Excelsior",
+            "tla": "EXC",
+            "crest": "https://crests.football-data.org/670.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 2,
+          "points": 10,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "goalDifference": 6
         },
         {
           "position": 7,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 676,
+            "name": "FC Utrecht",
+            "shortName": "Utrecht",
+            "tla": "UTR",
+            "crest": "https://crests.football-data.org/676.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 1,
+          "draw": 2,
+          "lost": 3,
+          "points": 5,
+          "goalsFor": 10,
+          "goalsAgainst": 18,
+          "goalDifference": -8
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 684,
             "name": "PEC Zwolle",
             "shortName": "Zwolle",
@@ -276,7 +295,7 @@
           "goalDifference": -4
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 1912,
             "name": "Telstar 1963",
@@ -295,7 +314,7 @@
           "goalDifference": -6
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 1909,
             "name": "SC Cambuur-Leeuwarden",
@@ -309,25 +328,6 @@
           "draw": 1,
           "lost": 4,
           "points": 4,
-          "goalsFor": 9,
-          "goalsAgainst": 18,
-          "goalDifference": -9
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 676,
-            "name": "FC Utrecht",
-            "shortName": "Utrecht",
-            "tla": "UTR",
-            "crest": "https://crests.football-data.org/676.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 0,
-          "draw": 3,
-          "lost": 3,
-          "points": 3,
           "goalsFor": 9,
           "goalsAgainst": 18,
           "goalDifference": -9
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-13T10:48:12Z"
+  "updatedAt": "2026-09-13T11:02:59Z"
 }
