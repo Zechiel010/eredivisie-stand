@@ -189,12 +189,12 @@
             "tla": "GRO",
             "crest": "https://crests.football-data.org/677.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 2,
-          "draw": 2,
+          "draw": 3,
           "lost": 2,
-          "points": 8,
+          "points": 9,
           "goalsFor": 12,
           "goalsAgainst": 13,
           "goalDifference": -1
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 684,
+            "name": "PEC Zwolle",
+            "shortName": "Zwolle",
+            "tla": "ZWO",
+            "crest": "https://crests.football-data.org/684.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 1,
+          "draw": 2,
+          "lost": 4,
+          "points": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 17,
+          "goalDifference": -11
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 1909,
             "name": "SC Cambuur-Leeuwarden",
             "shortName": "Cambuur",
@@ -312,25 +331,6 @@
           "goalsFor": 9,
           "goalsAgainst": 18,
           "goalDifference": -9
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 684,
-            "name": "PEC Zwolle",
-            "shortName": "Zwolle",
-            "tla": "ZWO",
-            "crest": "https://crests.football-data.org/684.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 1,
-          "draw": 1,
-          "lost": 4,
-          "points": 4,
-          "goalsFor": 6,
-          "goalsAgainst": 17,
-          "goalDifference": -11
         },
         {
           "position": 17,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-18T17:47:06Z"
+  "updatedAt": "2026-09-18T18:03:33Z"
 }
