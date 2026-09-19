@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 678,
+            "name": "AFC Ajax",
+            "shortName": "Ajax",
+            "tla": "AJA",
+            "crest": "https://crests.football-data.org/678.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 5,
+          "draw": 1,
+          "lost": 1,
+          "points": 16,
+          "goalsFor": 20,
+          "goalsAgainst": 7,
+          "goalDifference": 13
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 682,
             "name": "AZ",
             "shortName": "AZ",
@@ -67,7 +86,7 @@
           "goalDifference": 11
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 675,
             "name": "Feyenoord Rotterdam",
@@ -84,25 +103,6 @@
           "goalsFor": 20,
           "goalsAgainst": 7,
           "goalDifference": 13
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 678,
-            "name": "AFC Ajax",
-            "shortName": "Ajax",
-            "tla": "AJA",
-            "crest": "https://crests.football-data.org/678.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 4,
-          "draw": 2,
-          "lost": 1,
-          "points": 14,
-          "goalsFor": 19,
-          "goalsAgainst": 7,
-          "goalDifference": 12
         },
         {
           "position": 5,
@@ -126,25 +126,6 @@
         {
           "position": 6,
           "team": {
-            "id": 670,
-            "name": "SBV Excelsior",
-            "shortName": "Excelsior",
-            "tla": "EXC",
-            "crest": "https://crests.football-data.org/670.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 2,
-          "points": 11,
-          "goalsFor": 13,
-          "goalsAgainst": 7,
-          "goalDifference": 6
-        },
-        {
-          "position": 7,
-          "team": {
             "id": 677,
             "name": "FC Groningen",
             "shortName": "Groningen",
@@ -160,6 +141,25 @@
           "goalsFor": 15,
           "goalsAgainst": 13,
           "goalDifference": 2
+        },
+        {
+          "position": 7,
+          "team": {
+            "id": 670,
+            "name": "SBV Excelsior",
+            "shortName": "Excelsior",
+            "tla": "EXC",
+            "crest": "https://crests.football-data.org/670.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 3,
+          "points": 10,
+          "goalsFor": 13,
+          "goalsAgainst": 8,
+          "goalDifference": 5
         },
         {
           "position": 8,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-19T18:36:05Z"
+  "updatedAt": "2026-09-19T18:49:08Z"
 }
