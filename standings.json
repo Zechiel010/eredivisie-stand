@@ -50,25 +50,6 @@
         {
           "position": 2,
           "team": {
-            "id": 674,
-            "name": "PSV",
-            "shortName": "PSV",
-            "tla": "PSV",
-            "crest": "https://crests.football-data.org/674.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 0,
-          "points": 17,
-          "goalsFor": 22,
-          "goalsAgainst": 7,
-          "goalDifference": 15
-        },
-        {
-          "position": 3,
-          "team": {
             "id": 682,
             "name": "AZ",
             "shortName": "AZ",
@@ -86,7 +67,45 @@
           "goalDifference": 11
         },
         {
+          "position": 3,
+          "team": {
+            "id": 674,
+            "name": "PSV",
+            "shortName": "PSV",
+            "tla": "PSV",
+            "crest": "https://crests.football-data.org/674.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 5,
+          "draw": 1,
+          "lost": 1,
+          "points": 16,
+          "goalsFor": 22,
+          "goalsAgainst": 8,
+          "goalDifference": 14
+        },
+        {
           "position": 4,
+          "team": {
+            "id": 666,
+            "name": "FC Twente '65",
+            "shortName": "Twente",
+            "tla": "TWE",
+            "crest": "https://crests.football-data.org/666.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 5,
+          "draw": 1,
+          "lost": 1,
+          "points": 16,
+          "goalsFor": 13,
+          "goalsAgainst": 5,
+          "goalDifference": 8
+        },
+        {
+          "position": 5,
           "team": {
             "id": 678,
             "name": "AFC Ajax",
@@ -103,25 +122,6 @@
           "goalsFor": 21,
           "goalsAgainst": 9,
           "goalDifference": 12
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 666,
-            "name": "FC Twente '65",
-            "shortName": "Twente",
-            "tla": "TWE",
-            "crest": "https://crests.football-data.org/666.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 4,
-          "draw": 2,
-          "lost": 1,
-          "points": 14,
-          "goalsFor": 12,
-          "goalsAgainst": 5,
-          "goalDifference": 7
         },
         {
           "position": 6,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-20T12:39:47Z"
+  "updatedAt": "2026-09-20T12:51:06Z"
 }
