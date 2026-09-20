@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 674,
+            "name": "PSV",
+            "shortName": "PSV",
+            "tla": "PSV",
+            "crest": "https://crests.football-data.org/674.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 6,
+          "draw": 1,
+          "lost": 0,
+          "points": 19,
+          "goalsFor": 24,
+          "goalsAgainst": 8,
+          "goalDifference": 16
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 682,
             "name": "AZ",
             "shortName": "AZ",
@@ -48,7 +67,7 @@
           "goalDifference": 12
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 675,
             "name": "Feyenoord Rotterdam",
@@ -65,25 +84,6 @@
           "goalsFor": 25,
           "goalsAgainst": 7,
           "goalDifference": 18
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 674,
-            "name": "PSV",
-            "shortName": "PSV",
-            "tla": "PSV",
-            "crest": "https://crests.football-data.org/674.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 0,
-          "points": 17,
-          "goalsFor": 23,
-          "goalsAgainst": 8,
-          "goalDifference": 15
         },
         {
           "position": 4,
@@ -116,12 +116,12 @@
           "playedGames": 7,
           "form": null,
           "won": 4,
-          "draw": 2,
-          "lost": 1,
-          "points": 14,
+          "draw": 1,
+          "lost": 2,
+          "points": 13,
           "goalsFor": 13,
-          "goalsAgainst": 6,
-          "goalDifference": 7
+          "goalsAgainst": 7,
+          "goalDifference": 6
         },
         {
           "position": 6,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-20T13:03:28Z"
+  "updatedAt": "2026-09-20T13:21:51Z"
 }
