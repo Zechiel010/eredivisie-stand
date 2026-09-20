@@ -189,14 +189,14 @@
             "tla": "GOA",
             "crest": "https://crests.football-data.org/718.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 9,
-          "goalsFor": 15,
-          "goalsAgainst": 13,
+          "points": 10,
+          "goalsFor": 16,
+          "goalsAgainst": 14,
           "goalDifference": 2
         },
         {
@@ -227,14 +227,14 @@
             "tla": "NEC",
             "crest": "https://crests.football-data.org/1915.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 2,
-          "draw": 1,
+          "draw": 2,
           "lost": 3,
-          "points": 7,
-          "goalsFor": 11,
-          "goalsAgainst": 12,
+          "points": 8,
+          "goalsFor": 12,
+          "goalsAgainst": 13,
           "goalDifference": -1
         },
         {
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-09-20T14:47:29Z"
+  "updatedAt": "2026-09-20T15:02:50Z"
 }
