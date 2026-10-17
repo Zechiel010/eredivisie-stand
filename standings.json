@@ -56,14 +56,14 @@
             "tla": "PSV",
             "crest": "https://crests.football-data.org/674.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 6,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
-          "points": 19,
-          "goalsFor": 26,
-          "goalsAgainst": 10,
+          "points": 20,
+          "goalsFor": 27,
+          "goalsAgainst": 11,
           "goalDifference": 16
         },
         {
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 680,
+            "name": "ADO Den Haag",
+            "shortName": "Den Haag",
+            "tla": "ADO",
+            "crest": "https://crests.football-data.org/680.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 0,
+          "draw": 4,
+          "lost": 5,
+          "points": 4,
+          "goalsFor": 10,
+          "goalsAgainst": 20,
+          "goalDifference": -10
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 684,
             "name": "PEC Zwolle",
             "shortName": "Zwolle",
@@ -331,25 +350,6 @@
           "goalsFor": 6,
           "goalsAgainst": 21,
           "goalDifference": -15
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 680,
-            "name": "ADO Den Haag",
-            "shortName": "Den Haag",
-            "tla": "ADO",
-            "crest": "https://crests.football-data.org/680.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 0,
-          "draw": 3,
-          "lost": 5,
-          "points": 3,
-          "goalsFor": 9,
-          "goalsAgainst": 19,
-          "goalDifference": -10
         },
         {
           "position": 18,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-17T13:03:43Z"
+  "updatedAt": "2026-10-17T16:22:30Z"
 }
