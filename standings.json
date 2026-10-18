@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 666,
+            "name": "FC Twente '65",
+            "shortName": "Twente",
+            "tla": "TWE",
+            "crest": "https://crests.football-data.org/666.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 6,
+          "draw": 2,
+          "lost": 1,
+          "points": 20,
+          "goalsFor": 17,
+          "goalsAgainst": 8,
+          "goalDifference": 9
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 674,
             "name": "PSV",
             "shortName": "PSV",
@@ -86,7 +105,7 @@
           "goalDifference": 15
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 678,
             "name": "AFC Ajax",
@@ -105,26 +124,26 @@
           "goalDifference": 15
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
-            "id": 666,
-            "name": "FC Twente '65",
-            "shortName": "Twente",
-            "tla": "TWE",
-            "crest": "https://crests.football-data.org/666.png"
+            "id": 1920,
+            "name": "Fortuna Sittard",
+            "shortName": "Sittard",
+            "tla": "SIT",
+            "crest": "https://crests.football-data.org/1920.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 1,
-          "points": 17,
-          "goalsFor": 16,
-          "goalsAgainst": 8,
-          "goalDifference": 8
+          "won": 4,
+          "draw": 3,
+          "lost": 2,
+          "points": 15,
+          "goalsFor": 15,
+          "goalsAgainst": 16,
+          "goalDifference": -1
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 677,
             "name": "FC Groningen",
@@ -141,25 +160,6 @@
           "goalsFor": 22,
           "goalsAgainst": 19,
           "goalDifference": 3
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 1920,
-            "name": "Fortuna Sittard",
-            "shortName": "Sittard",
-            "tla": "SIT",
-            "crest": "https://crests.football-data.org/1920.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 4,
-          "draw": 2,
-          "lost": 2,
-          "points": 14,
-          "goalsFor": 14,
-          "goalsAgainst": 15,
-          "goalDifference": -1
         },
         {
           "position": 8,
@@ -227,14 +227,14 @@
             "tla": "NEC",
             "crest": "https://crests.football-data.org/1915.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 3,
-          "points": 9,
-          "goalsFor": 13,
-          "goalsAgainst": 14,
+          "points": 10,
+          "goalsFor": 14,
+          "goalsAgainst": 15,
           "goalDifference": -1
         },
         {
@@ -284,15 +284,15 @@
             "tla": "UTR",
             "crest": "https://crests.football-data.org/676.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 2,
           "draw": 2,
-          "lost": 4,
+          "lost": 5,
           "points": 8,
           "goalsFor": 14,
-          "goalsAgainst": 25,
-          "goalDifference": -11
+          "goalsAgainst": 26,
+          "goalDifference": -12
         },
         {
           "position": 15,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-18T16:38:39Z"
+  "updatedAt": "2026-10-18T18:55:20Z"
 }
