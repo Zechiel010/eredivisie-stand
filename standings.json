@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 682,
+            "name": "AZ",
+            "shortName": "AZ",
+            "tla": "AZ",
+            "crest": "https://crests.football-data.org/682.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 6,
+          "draw": 2,
+          "lost": 1,
+          "points": 20,
+          "goalsFor": 20,
+          "goalsAgainst": 10,
+          "goalDifference": 10
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 674,
             "name": "PSV",
             "shortName": "PSV",
@@ -67,26 +86,26 @@
           "goalDifference": 15
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
-            "id": 682,
-            "name": "AZ",
-            "shortName": "AZ",
-            "tla": "AZ",
-            "crest": "https://crests.football-data.org/682.png"
+            "id": 678,
+            "name": "AFC Ajax",
+            "shortName": "Ajax",
+            "tla": "AJA",
+            "crest": "https://crests.football-data.org/678.png"
           },
           "playedGames": 9,
           "form": null,
-          "won": 6,
-          "draw": 1,
-          "lost": 2,
-          "points": 19,
-          "goalsFor": 19,
-          "goalsAgainst": 10,
-          "goalDifference": 9
+          "won": 5,
+          "draw": 3,
+          "lost": 1,
+          "points": 18,
+          "goalsFor": 27,
+          "goalsAgainst": 12,
+          "goalDifference": 15
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 666,
             "name": "FC Twente '65",
@@ -105,25 +124,6 @@
           "goalDifference": 8
         },
         {
-          "position": 5,
-          "team": {
-            "id": 678,
-            "name": "AFC Ajax",
-            "shortName": "Ajax",
-            "tla": "AJA",
-            "crest": "https://crests.football-data.org/678.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 4,
-          "draw": 3,
-          "lost": 1,
-          "points": 15,
-          "goalsFor": 22,
-          "goalsAgainst": 10,
-          "goalDifference": 12
-        },
-        {
           "position": 6,
           "team": {
             "id": 677,
@@ -132,15 +132,15 @@
             "tla": "GRO",
             "crest": "https://crests.football-data.org/677.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 4,
           "draw": 2,
-          "lost": 2,
+          "lost": 3,
           "points": 14,
-          "goalsFor": 20,
-          "goalsAgainst": 14,
-          "goalDifference": 6
+          "goalsFor": 22,
+          "goalsAgainst": 19,
+          "goalDifference": 3
         },
         {
           "position": 7,
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 1909,
-            "name": "SC Cambuur-Leeuwarden",
-            "shortName": "Cambuur",
-            "tla": "CAM",
-            "crest": "https://crests.football-data.org/1909.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 4,
-          "points": 11,
-          "goalsFor": 13,
-          "goalsAgainst": 20,
-          "goalDifference": -7
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 1915,
             "name": "NEC",
             "shortName": "NEC",
@@ -257,7 +238,7 @@
           "goalDifference": -1
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 6806,
             "name": "Sparta Rotterdam",
@@ -274,6 +255,25 @@
           "goalsFor": 16,
           "goalsAgainst": 22,
           "goalDifference": -6
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 1909,
+            "name": "SC Cambuur-Leeuwarden",
+            "shortName": "Cambuur",
+            "tla": "CAM",
+            "crest": "https://crests.football-data.org/1909.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 4,
+          "points": 9,
+          "goalsFor": 13,
+          "goalsAgainst": 21,
+          "goalDifference": -8
         },
         {
           "position": 14,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-18T13:23:35Z"
+  "updatedAt": "2026-10-18T16:38:39Z"
 }
