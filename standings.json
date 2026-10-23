@@ -176,8 +176,8 @@
           "draw": 5,
           "lost": 2,
           "points": 14,
-          "goalsFor": 21,
-          "goalsAgainst": 21,
+          "goalsFor": 23,
+          "goalsAgainst": 23,
           "goalDifference": 0
         },
         {
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 1912,
+            "name": "Telstar 1963",
+            "shortName": "Telstar",
+            "tla": "TEL",
+            "crest": "https://crests.football-data.org/1912.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 1,
+          "draw": 3,
+          "lost": 6,
+          "points": 6,
+          "goalsFor": 12,
+          "goalsAgainst": 21,
+          "goalDifference": -9
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 680,
             "name": "ADO Den Haag",
             "shortName": "Den Haag",
@@ -330,25 +349,6 @@
           "points": 6,
           "goalsFor": 11,
           "goalsAgainst": 20,
-          "goalDifference": -9
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 1912,
-            "name": "Telstar 1963",
-            "shortName": "Telstar",
-            "tla": "TEL",
-            "crest": "https://crests.football-data.org/1912.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 1,
-          "draw": 3,
-          "lost": 6,
-          "points": 6,
-          "goalsFor": 10,
-          "goalsAgainst": 19,
           "goalDifference": -9
         },
         {
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-23T18:32:16Z"
+  "updatedAt": "2026-10-23T21:39:22Z"
 }
