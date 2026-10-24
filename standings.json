@@ -227,15 +227,15 @@
             "tla": "UTR",
             "crest": "https://crests.football-data.org/676.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 3,
           "draw": 2,
-          "lost": 4,
+          "lost": 5,
           "points": 11,
           "goalsFor": 16,
-          "goalsAgainst": 26,
-          "goalDifference": -10
+          "goalsAgainst": 27,
+          "goalDifference": -11
         },
         {
           "position": 12,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 684,
+            "name": "PEC Zwolle",
+            "shortName": "Zwolle",
+            "tla": "ZWO",
+            "crest": "https://crests.football-data.org/684.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 6,
+          "points": 10,
+          "goalsFor": 11,
+          "goalsAgainst": 22,
+          "goalDifference": -11
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 6806,
             "name": "Sparta Rotterdam",
             "shortName": "Sparta",
@@ -276,7 +295,7 @@
           "goalDifference": -6
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 1909,
             "name": "SC Cambuur-Leeuwarden",
@@ -293,25 +312,6 @@
           "goalsFor": 13,
           "goalsAgainst": 21,
           "goalDifference": -8
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 684,
-            "name": "PEC Zwolle",
-            "shortName": "Zwolle",
-            "tla": "ZWO",
-            "crest": "https://crests.football-data.org/684.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 6,
-          "points": 7,
-          "goalsFor": 10,
-          "goalsAgainst": 22,
-          "goalDifference": -12
         },
         {
           "position": 16,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-24T12:48:42Z"
+  "updatedAt": "2026-10-24T16:20:39Z"
 }
