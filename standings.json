@@ -88,24 +88,43 @@
         {
           "position": 4,
           "team": {
+            "id": 666,
+            "name": "FC Twente '65",
+            "shortName": "Twente",
+            "tla": "TWE",
+            "crest": "https://crests.football-data.org/666.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 6,
+          "draw": 2,
+          "lost": 2,
+          "points": 20,
+          "goalsFor": 19,
+          "goalsAgainst": 10,
+          "goalDifference": 9
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 682,
             "name": "AZ",
             "shortName": "AZ",
             "tla": "AZ",
             "crest": "https://crests.football-data.org/682.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 6,
           "draw": 2,
-          "lost": 1,
+          "lost": 2,
           "points": 20,
           "goalsFor": 20,
-          "goalsAgainst": 10,
-          "goalDifference": 10
+          "goalsAgainst": 12,
+          "goalDifference": 8
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 1920,
             "name": "Fortuna Sittard",
@@ -122,25 +141,6 @@
           "goalsFor": 17,
           "goalsAgainst": 17,
           "goalDifference": 0
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 666,
-            "name": "FC Twente '65",
-            "shortName": "Twente",
-            "tla": "TWE",
-            "crest": "https://crests.football-data.org/666.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 2,
-          "points": 17,
-          "goalsFor": 17,
-          "goalsAgainst": 10,
-          "goalDifference": 7
         },
         {
           "position": 7,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-25T18:24:19Z"
+  "updatedAt": "2026-10-25T21:00:16Z"
 }
