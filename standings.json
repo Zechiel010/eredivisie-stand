@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 678,
+            "name": "AFC Ajax",
+            "shortName": "Ajax",
+            "tla": "AJA",
+            "crest": "https://crests.football-data.org/678.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 6,
+          "draw": 3,
+          "lost": 1,
+          "points": 21,
+          "goalsFor": 29,
+          "goalsAgainst": 13,
+          "goalDifference": 16
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 674,
             "name": "PSV",
             "shortName": "PSV",
@@ -67,7 +86,7 @@
           "goalDifference": 15
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 682,
             "name": "AZ",
@@ -84,25 +103,6 @@
           "goalsFor": 20,
           "goalsAgainst": 10,
           "goalDifference": 10
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 678,
-            "name": "AFC Ajax",
-            "shortName": "Ajax",
-            "tla": "AJA",
-            "crest": "https://crests.football-data.org/678.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 5,
-          "draw": 3,
-          "lost": 1,
-          "points": 18,
-          "goalsFor": 27,
-          "goalsAgainst": 12,
-          "goalDifference": 15
         },
         {
           "position": 5,
@@ -284,15 +284,15 @@
             "tla": "SPA",
             "crest": "https://crests.football-data.org/6806.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 2,
           "draw": 3,
-          "lost": 4,
+          "lost": 5,
           "points": 9,
-          "goalsFor": 16,
-          "goalsAgainst": 22,
-          "goalDifference": -6
+          "goalsFor": 17,
+          "goalsAgainst": 24,
+          "goalDifference": -7
         },
         {
           "position": 15,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-25T15:13:52Z"
+  "updatedAt": "2026-10-25T18:24:19Z"
 }
