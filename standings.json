@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 1920,
+            "name": "Fortuna Sittard",
+            "shortName": "Sittard",
+            "tla": "SIT",
+            "crest": "https://crests.football-data.org/1920.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 2,
+          "points": 16,
+          "goalsFor": 16,
+          "goalsAgainst": 17,
+          "goalDifference": -1
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 673,
             "name": "SC Heerenveen",
             "shortName": "Heerenveen",
@@ -141,25 +160,6 @@
           "goalsFor": 18,
           "goalsAgainst": 13,
           "goalDifference": 5
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 1920,
-            "name": "Fortuna Sittard",
-            "shortName": "Sittard",
-            "tla": "SIT",
-            "crest": "https://crests.football-data.org/1920.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 4,
-          "draw": 3,
-          "lost": 2,
-          "points": 15,
-          "goalsFor": 16,
-          "goalsAgainst": 17,
-          "goalDifference": -1
         },
         {
           "position": 8,
@@ -202,6 +202,25 @@
         {
           "position": 10,
           "team": {
+            "id": 670,
+            "name": "SBV Excelsior",
+            "shortName": "Excelsior",
+            "tla": "EXC",
+            "crest": "https://crests.football-data.org/670.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 3,
+          "draw": 3,
+          "lost": 4,
+          "points": 12,
+          "goalsFor": 16,
+          "goalsAgainst": 18,
+          "goalDifference": -2
+        },
+        {
+          "position": 11,
+          "team": {
             "id": 1909,
             "name": "SC Cambuur-Leeuwarden",
             "shortName": "Cambuur",
@@ -219,7 +238,7 @@
           "goalDifference": -3
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 676,
             "name": "FC Utrecht",
@@ -236,25 +255,6 @@
           "goalsFor": 17,
           "goalsAgainst": 27,
           "goalDifference": -10
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 670,
-            "name": "SBV Excelsior",
-            "shortName": "Excelsior",
-            "tla": "EXC",
-            "crest": "https://crests.football-data.org/670.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 4,
-          "points": 11,
-          "goalsFor": 16,
-          "goalsAgainst": 18,
-          "goalDifference": -2
         },
         {
           "position": 13,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-25T06:23:51Z"
+  "updatedAt": "2026-10-25T11:51:39Z"
 }
