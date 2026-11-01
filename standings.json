@@ -94,12 +94,12 @@
             "tla": "TWE",
             "crest": "https://crests.football-data.org/666.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 6,
-          "draw": 2,
+          "draw": 3,
           "lost": 2,
-          "points": 20,
+          "points": 21,
           "goalsFor": 19,
           "goalsAgainst": 10,
           "goalDifference": 9
@@ -221,24 +221,43 @@
         {
           "position": 11,
           "team": {
+            "id": 670,
+            "name": "SBV Excelsior",
+            "shortName": "Excelsior",
+            "tla": "EXC",
+            "crest": "https://crests.football-data.org/670.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 3,
+          "draw": 3,
+          "lost": 5,
+          "points": 12,
+          "goalsFor": 16,
+          "goalsAgainst": 19,
+          "goalDifference": -3
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 676,
             "name": "FC Utrecht",
             "shortName": "Utrecht",
             "tla": "UTR",
             "crest": "https://crests.football-data.org/676.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 3,
           "draw": 3,
-          "lost": 4,
+          "lost": 5,
           "points": 12,
           "goalsFor": 17,
-          "goalsAgainst": 27,
-          "goalDifference": -10
+          "goalsAgainst": 28,
+          "goalDifference": -11
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 1915,
             "name": "NEC",
@@ -257,26 +276,26 @@
           "goalDifference": -2
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
-            "id": 670,
-            "name": "SBV Excelsior",
-            "shortName": "Excelsior",
-            "tla": "EXC",
-            "crest": "https://crests.football-data.org/670.png"
+            "id": 684,
+            "name": "PEC Zwolle",
+            "shortName": "Zwolle",
+            "tla": "ZWO",
+            "crest": "https://crests.football-data.org/684.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 3,
           "draw": 2,
-          "lost": 5,
+          "lost": 6,
           "points": 11,
-          "goalsFor": 16,
-          "goalsAgainst": 19,
-          "goalDifference": -3
+          "goalsFor": 12,
+          "goalsAgainst": 23,
+          "goalDifference": -11
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 6806,
             "name": "Sparta Rotterdam",
@@ -295,25 +314,6 @@
           "goalDifference": -7
         },
         {
-          "position": 15,
-          "team": {
-            "id": 684,
-            "name": "PEC Zwolle",
-            "shortName": "Zwolle",
-            "tla": "ZWO",
-            "crest": "https://crests.football-data.org/684.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 6,
-          "points": 8,
-          "goalsFor": 11,
-          "goalsAgainst": 23,
-          "goalDifference": -12
-        },
-        {
           "position": 16,
           "team": {
             "id": 1912,
@@ -322,15 +322,15 @@
             "tla": "TEL",
             "crest": "https://crests.football-data.org/1912.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
-          "won": 1,
+          "won": 2,
           "draw": 3,
           "lost": 6,
-          "points": 6,
-          "goalsFor": 12,
+          "points": 9,
+          "goalsFor": 13,
           "goalsAgainst": 21,
-          "goalDifference": -9
+          "goalDifference": -8
         },
         {
           "position": 17,
@@ -341,15 +341,15 @@
             "tla": "ADO",
             "crest": "https://crests.football-data.org/680.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 1,
           "draw": 3,
-          "lost": 6,
+          "lost": 7,
           "points": 6,
           "goalsFor": 13,
-          "goalsAgainst": 23,
-          "goalDifference": -10
+          "goalsAgainst": 24,
+          "goalDifference": -11
         },
         {
           "position": 18,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-01T06:30:32Z"
+  "updatedAt": "2026-11-01T13:45:55Z"
 }
