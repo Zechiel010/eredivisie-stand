@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 718,
+            "name": "Go Ahead Eagles",
+            "shortName": "Go Ahead",
+            "tla": "GOA",
+            "crest": "https://crests.football-data.org/718.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 4,
+          "draw": 5,
+          "lost": 3,
+          "points": 17,
+          "goalsFor": 24,
+          "goalsAgainst": 27,
+          "goalDifference": -3
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 677,
             "name": "FC Groningen",
             "shortName": "Groningen",
@@ -181,7 +200,7 @@
           "goalDifference": 2
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 1909,
             "name": "SC Cambuur-Leeuwarden",
@@ -200,25 +219,6 @@
           "goalDifference": 1
         },
         {
-          "position": 10,
-          "team": {
-            "id": 718,
-            "name": "Go Ahead Eagles",
-            "shortName": "Go Ahead",
-            "tla": "GOA",
-            "crest": "https://crests.football-data.org/718.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 3,
-          "draw": 5,
-          "lost": 3,
-          "points": 14,
-          "goalsFor": 23,
-          "goalsAgainst": 27,
-          "goalDifference": -4
-        },
-        {
           "position": 11,
           "team": {
             "id": 6806,
@@ -230,12 +230,12 @@
           "playedGames": 12,
           "form": null,
           "won": 3,
-          "draw": 4,
-          "lost": 5,
-          "points": 13,
+          "draw": 3,
+          "lost": 6,
+          "points": 12,
           "goalsFor": 21,
-          "goalsAgainst": 27,
-          "goalDifference": -6
+          "goalsAgainst": 29,
+          "goalDifference": -8
         },
         {
           "position": 12,
@@ -303,15 +303,15 @@
             "tla": "EXC",
             "crest": "https://crests.football-data.org/670.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 3,
           "draw": 2,
-          "lost": 6,
+          "lost": 7,
           "points": 11,
           "goalsFor": 16,
-          "goalsAgainst": 28,
-          "goalDifference": -12
+          "goalsAgainst": 29,
+          "goalDifference": -13
         },
         {
           "position": 16,
@@ -343,13 +343,13 @@
           },
           "playedGames": 12,
           "form": null,
-          "won": 1,
-          "draw": 4,
+          "won": 2,
+          "draw": 3,
           "lost": 7,
-          "points": 7,
-          "goalsFor": 14,
+          "points": 9,
+          "goalsFor": 16,
           "goalsAgainst": 25,
-          "goalDifference": -11
+          "goalDifference": -9
         },
         {
           "position": 18,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-07T19:01:48Z"
+  "updatedAt": "2026-11-07T22:41:50Z"
 }
