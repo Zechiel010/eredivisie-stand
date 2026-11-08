@@ -31,40 +31,40 @@
         {
           "position": 1,
           "team": {
-            "id": 675,
-            "name": "Feyenoord Rotterdam",
-            "shortName": "Feyenoord",
-            "tla": "FEY",
-            "crest": "https://crests.football-data.org/675.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 7,
-          "draw": 4,
-          "lost": 0,
-          "points": 25,
-          "goalsFor": 33,
-          "goalsAgainst": 12,
-          "goalDifference": 21
-        },
-        {
-          "position": 2,
-          "team": {
             "id": 678,
             "name": "AFC Ajax",
             "shortName": "Ajax",
             "tla": "AJA",
             "crest": "https://crests.football-data.org/678.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 3,
           "lost": 1,
-          "points": 24,
-          "goalsFor": 30,
-          "goalsAgainst": 13,
-          "goalDifference": 17
+          "points": 27,
+          "goalsFor": 32,
+          "goalsAgainst": 14,
+          "goalDifference": 18
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": 675,
+            "name": "Feyenoord Rotterdam",
+            "shortName": "Feyenoord",
+            "tla": "FEY",
+            "crest": "https://crests.football-data.org/675.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 7,
+          "draw": 4,
+          "lost": 1,
+          "points": 25,
+          "goalsFor": 36,
+          "goalsAgainst": 17,
+          "goalDifference": 19
         },
         {
           "position": 3,
@@ -94,18 +94,37 @@
             "tla": "TWE",
             "crest": "https://crests.football-data.org/666.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 7,
           "draw": 2,
-          "lost": 2,
+          "lost": 3,
           "points": 23,
-          "goalsFor": 28,
-          "goalsAgainst": 10,
-          "goalDifference": 18
+          "goalsFor": 29,
+          "goalsAgainst": 12,
+          "goalDifference": 17
         },
         {
           "position": 5,
+          "team": {
+            "id": 673,
+            "name": "SC Heerenveen",
+            "shortName": "Heerenveen",
+            "tla": "HEE",
+            "crest": "https://crests.football-data.org/673.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 6,
+          "draw": 3,
+          "lost": 3,
+          "points": 21,
+          "goalsFor": 24,
+          "goalsAgainst": 16,
+          "goalDifference": 8
+        },
+        {
+          "position": 6,
           "team": {
             "id": 682,
             "name": "AZ",
@@ -124,7 +143,7 @@
           "goalDifference": 7
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 1920,
             "name": "Fortuna Sittard",
@@ -141,25 +160,6 @@
           "goalsFor": 20,
           "goalsAgainst": 20,
           "goalDifference": 0
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 673,
-            "name": "SC Heerenveen",
-            "shortName": "Heerenveen",
-            "tla": "HEE",
-            "crest": "https://crests.football-data.org/673.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 5,
-          "draw": 3,
-          "lost": 3,
-          "points": 18,
-          "goalsFor": 19,
-          "goalsAgainst": 13,
-          "goalDifference": 6
         },
         {
           "position": 8,
@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-08T08:16:28Z"
+  "updatedAt": "2026-11-08T15:26:03Z"
 }
